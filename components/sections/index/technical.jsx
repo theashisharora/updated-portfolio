@@ -35,15 +35,15 @@ export default function Technical() {
 				<section className={`${about.content} ${about.container}`}>
 					<div className={about.copy}>
 						<CopyBlock 
-							title="Polymath foundations"
+							title="Bridging Technology & Innovation"
 							icon={[ 'fat', 'chart-network' ]}
-							copy="With a strong foundation in both design and development, I bring a unique perspective to every project and am constantly learning and evolving to stay up-to-date with the latest industry trends."
+							copy="With a strong foundation in full stack development, cybersecurity, and machine learning, I bring a unique perspective to every project. My passion for problem-solving and continuous learning allows me to stay ahead of industry trends, ensuring innovative and scalable solutions."
 							iconClass={about.icon}
 							containerClass={about.container}
 						/>
 						<BadgesBlock 
 							title="Software I love to work with" 
-							copy="With over 20 years of experience creating digital assets, I have a deep and intuitive understanding of how the interfaces of the best software products in the world are designed. This is just some of the software I have used over that time."
+							copy="With a strong foundation in full stack development, cybersecurity, and machine learning, I have hands-on experience with a variety of industry-leading tools that enhance productivity and innovation. This is just some of the software I use regularly:"
 							list={software}
 							block="software" 
 							fullContainer="fullContainer"
@@ -53,7 +53,7 @@ export default function Technical() {
 						/>
 						<BadgesBlock 
 							title="Technologies I love to build with" 
-							copy="I deeply enjoy solving problems through code. From the front end all the way to the back end and the APIs in-between. No project is too challenging for me."
+							copy="I deeply enjoy solving complex problems through code, whether it's crafting seamless front-end experiences, designing robust back-end systems, or integrating efficient APIs. No project is too challenging for me."
 							list={tech} 
 							block="tech"
 							fullContainer="fullContainer" 
@@ -73,30 +73,30 @@ export default function Technical() {
 }
 
 const software = [
-	{ key: 'photoshop', 	name: 'Photoshop', 			type: 'devicon' },
-	{ key: 'illustrator', 	name: 'Illustrator', 		type: 'devicon' },
-	{ key: 'figma', 		name: 'Figma', 				type: 'devicon' },
-	{ key: 'vscode', 		name: 'VSCode', 			type: 'devicon' },
-	{ key: 'mailbox', 		name: 'Postman', 			type: 'fas' },
-	{ key: 'computer-mouse',name: 'Click Up', 			type: 'fas' },
-	{ key: 'list-music',	name: 'Ableton', 			type: 'fas' },
-	{ key: 'aftereffects',	name: 'After Effects', 		type: 'devicon' },
-	{ key: 'premierepro',	name: 'Premiere Pro', 		type: 'devicon' },
-]
+    { key: 'vscode',         name: 'VSCode',          type: 'devicon' },
+    { key: 'git',            name: 'Git',             type: 'devicon' },
+    { key: 'react',          name: 'React',           type: 'devicon' },
+    { key: 'nodejs',         name: 'Node.js',         type: 'devicon' },
+    { key: 'flask',          name: 'Flask',           type: 'devicon' },
+    { key: 'mongodb',        name: 'MongoDB',         type: 'devicon' },
+    { key: 'mysql',          name: 'MySQL',           type: 'devicon' },
+    { key: 'aws',            name: 'AWS',             type: 'devicon' },
+    { key: 'figma',          name: 'Figma',           type: 'devicon' },
+    { key: 'linux',          name: 'Linux',           type: 'devicon' },
+    { key: 'wifi',           name: 'Wireshark',       type: 'fas' },
+    { key: 'skull-crossbones', name: 'Kali Linux',    type: 'fas' },
+    { key: 'database',       name: 'SQL',             type: 'fas' },
+];
 
 const tech	= [
 	{ key: 'javascript', 	name: 'JavaScript', 		type: 'devicon' },
 	{ key: 'nodejs', 		name: 'NodeJS', 			type: 'devicon' },
 	{ key: 'react', 		name: 'React', 				type: 'devicon' },
 	{ key: 'nextjs', 		name: 'NextJS', 			type: 'devicon' },
-	{ key: 'jquery', 		name: 'jQuery', 			type: 'devicon' },
 	{ key: 'php', 			name: 'PHP', 				type: 'devicon' },
 	{ key: 'wordpress', 	name: 'WordPress', 			type: 'devicon' },
-	{ key: 'woocommerce', 	name: 'WooCommerce', 		type: 'devicon' },
-	{ key: "google",		name: "GA4/GTM", 			type: "devicon" },
 	{ key: 'html5', 		name: 'HTML5', 				type: 'devicon' },
 	{ key: 'css3', 			name: 'CSS3', 				type: 'devicon' },
-	{ key: 'sass', 			name: 'SASS', 				type: 'devicon' },
 	{ key: 'git', 			name: 'Git', 				type: 'devicon' },
 	{ key: 'mysql', 		name: 'MySQL', 				type: 'devicon' },
 	{ key: 'mongodb', 		name: 'MongoDB', 			type: 'devicon' },

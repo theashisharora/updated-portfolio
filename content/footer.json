@@ -1,50 +1,46 @@
 {
 	"acknowledgments": [
 		{ 
-			"person": "Jihad Hassan - Marketing Director",
-			"link": "",
-			"note": "Thank you for all the advice and feedback."
+			"project": "Vote4Ash",
+			"link": "https://vote4ash.vercel.app/",
+			"note": "Vote4Ash is a simple campaign platform."
 		},
 		{ 
-			"person": "Colorpong - Artist",
-			"link": "ttps://www.youworkforthem.com/designer/536/colorpong?aff=1115",
-			"note": "Checkout their amazing vector illustrations."
+			"project": "Go2Gether",
+			"link": "https://theashisharora.github.io/go2gether/",
+			"note": "BramHacks projects -Transportation."
 		},
 		{ 
-			"person": "Brittany Chiang - Software Engineer",
-			"link": "https://brittanychiang.com/",
-			"note": "A major inspiration to create an open source theme."
+			"project": "Former Portfolio",
+			"link": "https://theashisharora.github.io/portfolio/",
+			"note": "Made using HTML5, CSS and JS."
 		},
 		{ 
-			"person": "Vercel - Platform",
-			"link": "https://vercel.com/docs",
-			"note": "Host your own Next.js project for free!"
+			"project": "SansType",
+			"link": "https://arashish.dev.fast.sheridanc.on.ca/Co-op/TypeSans/",
+			"note": "Sanskrit Typing game."
 		}
 	],
 
 	"links": [
 		{ 
-			"person": "YWFT Creative Marketplace",
-			"link": "https://www.youworkforthem.com/?aff=1115",
-			"note": "Best in class creative assets."
+			"project": "Coming Soon",
+			"link": "#",
+			"note": "Waiting"
 		}
 	],
 
 	"social": [
 		{
-			"url": "https://medium.com/@--andrewnelson",
-			"icon": "medium"
+			"url": "https://www.instagram.com/the_ashish_arora/",
+			"icon": "instagram"
 		},
 		{
-			"url": "https://dev.to/andrewnelson",
-			"icon": "dev"
-		},
-		{
-			"url": "https://www.linkedin.com/in/--andrewnelson/",
+			"url": "https://www.linkedin.com/in/theashisharora2314/",
 			"icon": "linkedin"
 		},
 		{
-			"url": "https://github.com/atlamors",
+			"url": "https://github.com/theashisharora",
 			"icon": "github"
 		}
 	]

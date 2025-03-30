@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
 import { useRouter } from 'next/router';
 
 import Script from 'next/script'
@@ -110,6 +110,9 @@ export default function SetTheme() {
 				`}
 			</Script>
 			<button key="themeToggle" onClick={toggleTheme} data-theme={theme} className={css.toggle}>{buttonIcon(theme)}</button>
+			<div data-theme={theme}>
+				{/* Your component's content */}
+			</div>
 		</>
 	)
 }

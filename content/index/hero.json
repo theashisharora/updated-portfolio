@@ -1,6 +1,6 @@
 {
 	"intro": {
-		"start": "const Andrew = ( name, passion ) =>",
+		"start": "const Ash = ( name, passion ) =>",
 		"end": "Hello, my name is",
 		"speed": 60,
 		"deletionSpeed": 80,
@@ -11,11 +11,11 @@
 	},
 
 	"header": {
-		"name": "Andrew Nelson.",
-		"usp": "I design and build meaningful experiences."
+		"name": "Ashish Arora.",
+		"usp": "Code That Tells a Story."
 	},
 
-	"paragraph": "I am a digital polymath — a constantly evolving digital creator driven by a passion for lifelong learning and the desire to leave a lasting impact.",
+	"paragraph": "I'm a student diving into new languages, building killer projects, and chasing that epic co-op opportunity to fuel my future in tech.",
 
 	"buttons": {
 		"primary": {

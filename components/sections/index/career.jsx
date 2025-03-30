@@ -26,9 +26,11 @@ export default function Career() {
 				<SectionTitle
 					title="Experience"
 					preTitle="Career"
-					subTitle="I am current managing, designing, and developing all consumer and digital product initiatives at My Supply Co."
+					subTitle="I currently manage, design, and develop software solutions, focusing on full-stack development and machine learning projects."
 				/>
 				<section className={career.area}>
+
+					{/*
 					<article className={career.company}>
 						<div className={career.companyContent}>
 							<span className={career.companyHeader}>
@@ -123,19 +125,23 @@ export default function Career() {
 							<div className={career.positionAlt}></div>
 						</div>
 					</article>
-
+					*/}
+					
 					<article className={career.company}>
 						<div className={career.companyContent}>
 							<span className={career.companyHeader}>
-								<h3>Another Creative Ltd.</h3>
-								<h4>Contract Part-time</h4>
-								<h4>Jun 2016 - Present · 6 yrs 8 mos</h4>
-								<h5>Vancouver, British Columbia, Canada</h5>
+								<h3>Sheridan College (Powered by Samskrita Bharati)</h3>
+								<h4>Full-Stack Developer (Full-time)</h4>
+								<h4>Jan 2025 - Apr 2025 · 4 mos</h4>
+								<h5>Oakville, Ontario, Canada</h5>
 							</span>
 							<p>
-							Another Creative is a full stack agency that helps deliver exceptional digital experiences to small and medium businesses. Branding, Marketing, and Web/Software Development.
+							Working on web solutions at Sheridan College in collaboration with Samskrita Bharati, an organization dedicated to the revival of Sanskrit. As a Full-Stack Developer, I design, develop, and maintain web applications that enhance educational initiatives, ensuring seamless user experiences and robust backend functionality.
 							</p>
-						</div>
+							<p>
+								<Badges list={fullStack} block="stack" fullContainer="fullContainer"/>
+							</p>
+						</div>		
 						<div className={career.companyAlt}></div>
 					</article>
 
@@ -165,10 +171,8 @@ const fullStack	= [
 	{ key: 'nextjs', 		name: 'NextJS', 			type: 'devicon' },
 	{ key: 'php', 			name: 'PHP', 				type: 'devicon' },
 	{ key: 'wordpress', 	name: 'WordPress', 			type: 'devicon' },
-	{ key: 'woocommerce', 	name: 'WooCommerce', 		type: 'devicon' },
 	{ key: 'html5', 		name: 'HTML5', 				type: 'devicon' },
 	{ key: 'css3', 			name: 'CSS3', 				type: 'devicon' },
-	{ key: 'sass', 			name: 'SASS', 				type: 'devicon' },
 	{ key: 'git', 			name: 'Git', 				type: 'devicon' },
 	{ key: 'mysql', 		name: 'MySQL', 				type: 'devicon' },
 	{ key: 'mongodb', 		name: 'MongoDB', 			type: 'devicon' },
