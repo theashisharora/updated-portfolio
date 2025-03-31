@@ -28,10 +28,47 @@
 	}
 
 	.company {
-		position: relative;
+		position: relative; // Make the container a positioning context
 		display: flex;
-		flex-direction: row;
+		flex-direction: row; // Ensure content and image are side by side
 		gap: 1rem;
+		align-items: center; // Vertically align content and image
+		border: 1px solid var(--primary-dark);
+		border-radius: 1rem;
+		overflow: visible; // Allow the image to overflow the container
+		padding: var(--padding);
+		background: var(--background-dim2);
+	}
+
+	.companyContent {
+		flex: 1; // Take up remaining space on the left
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.companyImage {
+		flex-shrink: 0; // Prevent the image container from shrinking
+		display: flex;
+		justify-content: flex-end; // Align the image to the right
+		align-items: center; // Vertically center the image
+		padding: 0 1rem; // Add some padding around the image
+		margin-left: 5rem; // Move the image slightly to the right
+		transition: transform 0.3s ease, box-shadow 0.3s ease; // Smooth transition for hover effects
+
+		&:hover {
+			transform: scale(1.2); // Enlarge the image on hover
+		}
+	}
+
+	.image {
+		object-fit: contain; // Ensure the image retains its original aspect ratio
+		height: auto; // Maintain the original height
+		transition: transform 0.3s ease; // Smooth transition for hover effects
+
+		&:hover {
+			transform: scale(1); // Enlarge the image on hover
+		}
 	}
 
 	.company,

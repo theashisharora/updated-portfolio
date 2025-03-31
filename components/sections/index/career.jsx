@@ -1,7 +1,8 @@
-// Core packages
+// Career component
 import Image from 'next/image'
+import { useEffect, useState } from 'react';
 
-import Badges 		from '../../utils/badge.list.util'
+import Badges from '../../utils/badge.list.util'
 
 // Section structure
 import Section from '../../structure/section';
@@ -20,6 +21,12 @@ import career from '../../../styles/sections/index/career.module.scss'
  * @returns {jsx} <Career />
  */
 export default function Career() {
+	const [isClient, setIsClient] = useState(false);
+
+	useEffect(() => {
+		setIsClient(true); // Ensures dynamic content only renders on the client
+	}, []);
+
 	return (
 		<Section classProp={`${career.section} borderBottom`}>
 			<Container spacing={['verticalXXXLrg']}>
@@ -29,167 +36,108 @@ export default function Career() {
 					subTitle="I currently manage, design, and develop software solutions, focusing on full-stack development and machine learning projects."
 				/>
 				<section className={career.area}>
-
-					{/*
-					<article className={career.company}>
-						<div className={career.companyContent}>
-							<span className={career.companyHeader}>
-								<h3>My Supply Co.</h3>
-								<h4>Permanent Full-time</h4>
-								<h4>Apr 2019 - Present · 3 yrs 10 mos</h4>
-								<h5>Vancouver, British Columbia, Canada</h5>
-							</span>
-							<p>
-							My Supply Co. helps Canadians manage mental and physical health with naturally occurring nootropic and adaptogenic products. They carry products with complex attributes, aiming to solve a large variety of personal care needs — this requires an extremely customized and evolving approach to how the store is built and functions.
-							</p>
-						</div>
-						<div className={career.companyAlt}></div>
-					</article>
-
-					<article className={career.companyPositions}>
-						<div className={career.position}>
-							<div className={career.positionContent}>
-								<span class={career.positionHeader}>
-									<h3>Director of Product Design and Development</h3>
-									<h4>Nov 2021 - Present · 1 yrs 3 mos</h4>
-								</span>
-								<p>
-								I am responsible for the ideation, planning, and development of new consumer goods—and customer and employee facing microservice software. During these projects I work with key stakeholders within our company and supplychain to ensure and meet quality goals across multiple domains.
-								</p>
-							</div>
-							<div className={career.positionAlt}></div>
-						</div>
-
-						<div className={career.position}>
-							<div className={career.positionContent}>
-								<span class={career.positionHeader}>
-									<h3>Full Stack Developer & User Experience Designer</h3>
-									<h4>Feb 2020 - Nov 2021 · 1 yrs 10 mos</h4>
-								</span>
-								<p>
-								As the lead full stack developer I am responsible for all software development, CI/CD, and QA. This is for the front end, APIs, and the back end. Additionally I was tasked with identifying and analyzing weak points in the customer journey and employee workflows. Each project had to be estimated and prioritized based on its workload and immediate impact to efficiency or revenue. Some of these projects have been so successful internally that we have planned refactoring for commercialization. 
-								</p>
-								<p>
-								Some key projects complete during this time 👇
-								</p>
-								<ul className={career.list}>
-									<li>
-										Product attribute and settings automated testing
-										<span className={career.subList}><span className={career.bullet}></span>Eradicated critical data input errors</span>
-									</li>
-									<li>
-										Inventory management reporting and automation 
-										<span className={career.subList}><span className={career.bullet}></span>Decreased purchasing labour by ~80%</span>
-									</li>
-									<li>
-										Sales management plugin with AJAX shopping cart integration
-										<span className={career.subList}><span className={career.bullet}></span>Increased AOV by 8.3%</span>
-									</li>
-									<li>
-										Bespoke ID verification software and WooCommerce integration
-										<span className={career.subList}><span className={career.bullet}></span>Decreased Credit Card fraud by 98%</span>
-									</li>
-								</ul>
-								<Badges list={fullStack} block="stack" fullContainer="fullContainer"/>
-							</div>
-							<div className={career.positionAlt}></div>
-						</div>
-					
-						<div className={career.position}>
-							<div className={career.positionContent}>
-									<span class={career.positionHeader}>
-										<h3>Front End Developer & User Interface Designer</h3>
-										<h4>Apr 2019 - Feb 2020 · 11 mos</h4>
+					{isClient && (
+						<>
+							<article className={career.company}>
+								<div className={career.companyContent}>
+									<span className={career.companyHeader}>
+										<h3>Sheridan College (Powered by Samskrita Bharati)</h3>
+										<h4>Full-Stack Developer (Full-time)</h4>
+										<h4>Jan 2025 - Apr 2025 · 4 mos</h4>
+										<h5>Oakville, Ontario, Canada</h5>
 									</span>
-								<p>
-									I was brought on to help fill multiple creative rolls in a small start-up environment. Working with the marketing team to create the brand and logos — designing and developing a new front end for the website — and improving the users experience and store KPIs through design and merchandising optimizations.
-								</p>
-								<p>
-									Some key projects completed during this time 👇
-								</p>
-								<ul className={career.list}>
-									<li>
-										Full functionality interactive shopping cart to replace cart page
-										<span className={career.subList}><span className={career.bullet}></span>Increased conversions by 0.7%</span>
-									</li>
-									<li>Complex multi-state animated menus represented in an elegant UI 
-										<span className={career.subList}><span className={career.bullet}></span>Strong brand confidence booster with state of the art menu</span>
-									</li>
-									<li>
-										Design and development of the site and merchandising strategy optimized for market
-										<span className={career.subList}><span className={career.bullet}></span>7.1% overall conversion rate </span>
-									</li>
-								</ul>
-								<Badges list={stack} block="stack" fullContainer="fullContainer"/>
-							</div>
-							<div className={career.positionAlt}></div>
-						</div>
-					</article>
-					*/}
-					
-					<article className={career.company}>
-						<div className={career.companyContent}>
-							<span className={career.companyHeader}>
-								<h3>Sheridan College (Powered by Samskrita Bharati)</h3>
-								<h4>Full-Stack Developer (Full-time)</h4>
-								<h4>Jan 2025 - Apr 2025 · 4 mos</h4>
-								<h5>Oakville, Ontario, Canada</h5>
-							</span>
-							<p>
-							Working on web solutions at Sheridan College in collaboration with Samskrita Bharati, an organization dedicated to the revival of Sanskrit. As a Full-Stack Developer, I design, develop, and maintain web applications that enhance educational initiatives, ensuring seamless user experiences and robust backend functionality.
-							</p>
-							<p>
-								<Badges list={fullStack} block="stack" fullContainer="fullContainer"/>
-							</p>
-						</div>		
-						<div className={career.companyAlt}></div>
-					</article>
+									<p>
+										Working on web solutions at Sheridan College in collaboration with Samskrita Bharati, an organization dedicated to the revival of Sanskrit.
+									</p>
+									<p>
+										<Badges list={fullStack} block="stack" fullContainer="fullContainer" />
+									</p>
+								</div>
+								<div className={career.companyImage}>
+									<Image
+										src="/img/Sheridan-College/Sheridan-College-LinkedIn.png" // Replace with your image path
+										alt="Sheridan College Logo"
+										width={150} // Adjust width
+										height={300} // Adjust height
+										className={career.image} // Add a class for custom styling
+									/>
+								</div>
+							</article>
+							<article className={career.company}>
+								<div className={career.companyContent}>
+									<span className={career.companyHeader}>
+										<h3>Sheridan College</h3>
+										<h4>Student Ambassador (Part-time Contract)</h4>
+										<h4>Aug 2024 - Present</h4>
+										<h5>Davis Campus, Brampton, Ontario, Canada</h5>
+									</span>
+									<p>
+										As a Student Ambassador at Sheridan College, I assist with recruitment events, lead campus tours, and support new students in their transition to college life. I represent the college professionally, provide administrative assistance, and foster engagement among students.
+									</p>
+									<p>
+										<Badges list={studentAmbassadorSkills} block="stack" fullContainer="fullContainer" />
+									</p>
+								</div>
+								<div className={career.companyAlt}></div>
+							</article>
 
-					<article className={career.company}>
-						<div className={career.companyContent}>
-							<span className={career.companyHeader}>
-								<h3>West Coast Electronics</h3>
-								<h4>Permanent Full-time</h4>
-								<h4>Jan 2006 - Nov 2011 · 5 yrs 11 mos</h4>
-								<h5>Vancouver, British Columbia, Canada</h5>
-							</span>
-							<p>I was the Electronics Wizard 🧙‍♂️</p>
-							<p>West Coast Electronics was a repair shop that fixed computers, consoles, and cell phones.</p>
-						</div>
-						<div className={career.companyAlt}></div>
-					</article>
+							<article className={career.company}>
+								<div className={career.companyContent}>
+									<span className={career.companyHeader}>
+										<h3>Tommy Hilfiger</h3>
+										<h4>Lead Sales Associate (Part-time)</h4>
+										<h4>Oct 2023 - Present · 1 yr 6 mos</h4>
+										<h5>Halton Hills, Ontario, Canada</h5>
+									</span>
+									<p>
+										At Tommy Hilfiger, I lead sales initiatives, assist in team training, and ensure an exceptional customer experience. I focus on driving sales performance, optimizing store operations, and maintaining brand standards to enhance customer engagement.
+									</p>
+									<p>
+										<Badges list={tommyHilfiger} block="stack" fullContainer="fullContainer" />
+									</p>
+								</div>
+								<div className={career.companyAlt}></div>
+							</article>
+						</>
+
+					)}
 				</section>
 			</Container>
 		</Section>
 	)
 }
 
-const fullStack	= [
-	{ key: 'javascript', 	name: 'JavaScript', 		type: 'devicon' },
-	{ key: 'nodejs', 		name: 'NodeJS', 			type: 'devicon' },
-	{ key: 'react', 		name: 'React', 				type: 'devicon' },
-	{ key: 'nextjs', 		name: 'NextJS', 			type: 'devicon' },
-	{ key: 'php', 			name: 'PHP', 				type: 'devicon' },
-	{ key: 'wordpress', 	name: 'WordPress', 			type: 'devicon' },
-	{ key: 'html5', 		name: 'HTML5', 				type: 'devicon' },
-	{ key: 'css3', 			name: 'CSS3', 				type: 'devicon' },
-	{ key: 'git', 			name: 'Git', 				type: 'devicon' },
-	{ key: 'mysql', 		name: 'MySQL', 				type: 'devicon' },
-	{ key: 'mongodb', 		name: 'MongoDB', 			type: 'devicon' },
+const fullStack = [
+	{ key: 'javascript', name: 'JavaScript', type: 'devicon' },
+	{ key: 'nodejs', name: 'NodeJS', type: 'devicon' },
+	{ key: 'react', name: 'React', type: 'devicon' },
+	{ key: 'nextjs', name: 'NextJS', type: 'devicon' },
+	{ key: 'php', name: 'PHP', type: 'devicon' },
+	{ key: 'wordpress', name: 'WordPress', type: 'devicon' },
+	{ key: 'html5', name: 'HTML5', type: 'devicon' },
+	{ key: 'css3', name: 'CSS3', type: 'devicon' },
+	{ key: 'git', name: 'Git', type: 'devicon' },
+	{ key: 'mysql', name: 'MySQL', type: 'devicon' },
+	{ key: 'mongodb', name: 'MongoDB', type: 'devicon' },
 ]
 
-const stack	= [
-	{ key: 'javascript', 	name: 'JavaScript', 		type: 'devicon' },
-	{ key: 'nodejs', 		name: 'NodeJS', 			type: 'devicon' },
-	{ key: 'react', 		name: 'React', 				type: 'devicon' },
-	{ key: 'nextjs', 		name: 'NextJS', 			type: 'devicon' },
-	{ key: 'php', 			name: 'PHP', 				type: 'devicon' },
-	{ key: 'wordpress', 	name: 'WordPress', 			type: 'devicon' },
-	{ key: 'woocommerce', 	name: 'WooCommerce', 		type: 'devicon' },
-	{ key: 'html5', 		name: 'HTML5', 				type: 'devicon' },
-	{ key: 'css3', 			name: 'CSS3', 				type: 'devicon' },
-	{ key: 'sass', 			name: 'SASS', 				type: 'devicon' },
-	{ key: 'git', 			name: 'Git', 				type: 'devicon' },
-	{ key: 'mysql', 		name: 'MySQL', 				type: 'devicon' },
-	{ key: 'mongodb', 		name: 'MongoDB', 			type: 'devicon' },
-]
+const tommyHilfiger = [
+	{ key: 'fa-cash-register', name: 'Sales & Customer Service', type: 'fa' },
+	{ key: 'fa-users', name: 'Team Leadership', type: 'fa' },
+	{ key: 'fa-boxes', name: 'Inventory Management', type: 'fa' },
+	{ key: 'fa-credit-card', name: 'Point of Sale (POS) Systems', type: 'fa' },
+	{ key: 'fa-tshirt', name: 'Visual Merchandising', type: 'fa' },
+	{ key: 'fa-comments', name: 'Effective Communication', type: 'fa' },
+	{ key: 'fa-lightbulb', name: 'Problem Solving', type: 'fa' },
+	{ key: 'fa-clock', name: 'Time Management', type: 'fa' },
+	{ key: 'fa-store', name: 'Brand Presentation', type: 'fa' },
+	{ key: 'fa-smile', name: 'Customer Engagement', type: 'fa' }
+];
+
+const studentAmbassadorSkills = [
+	{ key: 'fa-users', name: 'Public Speaking', type: 'fa' },
+	{ key: 'fa-handshake', name: 'Student Engagement', type: 'fa' },
+	{ key: 'fa-chalkboard-teacher', name: 'Event Facilitation', type: 'fa' },
+	{ key: 'fa-calendar-alt', name: 'Campus Tours & Events', type: 'fa' },
+	{ key: 'fa-comments', name: 'Communication & Outreach', type: 'fa' }
+];
