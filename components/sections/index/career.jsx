@@ -53,15 +53,6 @@ export default function Career() {
 										<Badges list={fullStack} block="stack" fullContainer="fullContainer" />
 									</p>
 								</div>
-								<div className={career.companyImage}>
-									<Image
-										src="/img/Sheridan-College/Sheridan-College-LinkedIn.png" // Replace with your image path
-										alt="Sheridan College Logo"
-										width={150} // Adjust width
-										height={300} // Adjust height
-										className={career.image} // Add a class for custom styling
-									/>
-								</div>
 							</article>
 							<article className={career.company}>
 								<div className={career.companyContent}>
@@ -77,15 +68,6 @@ export default function Career() {
 									<p>
 										<Badges list={studentAmbassadorSkills} block="stack" fullContainer="fullContainer" />
 									</p>
-								</div>
-								<div className={career.companyImage}>
-									<Image
-										src="/img/Sheridan-College/Sheridan-College-LinkedIn.png" // Replace with your image path
-										alt="Sheridan College Logo"
-										width={150} // Adjust width
-										height={300} // Adjust height
-										className={career.image} // Add a class for custom styling
-									/>
 								</div>
 							</article>
 
@@ -103,15 +85,7 @@ export default function Career() {
 									<p>
 										<Badges list={tommyHilfiger} block="stack" fullContainer="fullContainer" />
 									</p>
-								</div>
-								<div className={career.companyImage}>
-									<Image
-										src="/img/Tommy-Hilfiger/Tommy-Hilfiger-LinkedIn.png" // Replace with your image path
-										alt="Sheridan College Logo"
-										width={150} // Adjust width
-										height={300} // Adjust height
-										className={career.image} // Add a class for custom styling
-									/>
+									
 								</div>
 							</article>
 						</>
