@@ -26,6 +26,7 @@ import '../styles/css/variables.css'
 import '../styles/css/global.css'
 
 import { SpeedInsights} from '@vercel/speed-insights/next';
+import { Analytics } from "@vercel/analytics/react"
 
 /**
  * _app.jsx
@@ -38,6 +39,7 @@ export default function MyApp({ Component, pageProps }) {
 	return (
 		<>
 		<SpeedInsights />
+		<Analytics />
 		<LazyMotion features={domAnimation}>
 			<Layout>
 				<Component {...pageProps} />
