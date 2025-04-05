@@ -42,6 +42,7 @@ export default function MyApp({ Component, pageProps }) {
 		<Head>
 			<title>Ashish&#39;s Portfolio</title>
 			<meta name="description" content="Welcome to my portfolio website." />
+			<link rel="icon" href="/favicon/icon.png" />
 		</Head>
 		<SpeedInsights />
 		<LazyMotion features={domAnimation}>
