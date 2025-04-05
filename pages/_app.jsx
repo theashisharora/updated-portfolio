@@ -27,6 +27,8 @@ import '../styles/css/global.css'
 
 import { SpeedInsights} from '@vercel/speed-insights/next';
 
+import Head from 'next/head';
+
 /**
  * _app.jsx
  *
@@ -37,6 +39,10 @@ import { SpeedInsights} from '@vercel/speed-insights/next';
 export default function MyApp({ Component, pageProps }) {
 	return (
 		<>
+		<Head>
+			<title>Ashish's Portfolio</title>
+			<meta name="description" content="Welcome to my portfolio website." />
+		</Head>
 		<SpeedInsights />
 		<LazyMotion features={domAnimation}>
 			<Layout>
