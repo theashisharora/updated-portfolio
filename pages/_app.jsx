@@ -40,7 +40,7 @@ export default function MyApp({ Component, pageProps }) {
 	return (
 		<>
 		<Head>
-			<title>Ashish's Portfolio</title>
+			<title>Ashish&#39;s Portfolio</title>
 			<meta name="description" content="Welcome to my portfolio website." />
 		</Head>
 		<SpeedInsights />
