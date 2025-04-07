@@ -47,13 +47,32 @@ export default function Career() {
 										<h5>Oakville, Ontario, Canada</h5>
 									</span>
 									<p>
-										Working on web solutions at Sheridan College in collaboration with Samskrita Bharati, an organization dedicated to the revival of Sanskrit.
+									As a Full Stack Developer, I design and develop scalable web applications using modern technologies such as React, Node.js, and MongoDB. I work across both frontend and backend environments, build responsive UI components, implement RESTful APIs, and manage databases. My role involves debugging, code optimization, version control, and deployment, ensuring seamless user experiences and efficient application performance.
 									</p>
 									<p>
 										<Badges list={fullStack} block="stack" fullContainer="fullContainer" />
 									</p>
 								</div>
 							</article>
+
+							<article className={career.company}>
+								<div className={career.companyContent}>
+									<span className={career.companyHeader}>
+										<h3>Sheridan College</h3>
+										<h4>Board of Director (Part-time Contract)</h4>
+										<h4>May 2025 - Present</h4>
+										<h5>Davis Campus, Ontario, Canada</h5>
+									</span>
+									<p>
+										As a Board of Director at Sheridan College, I contribute to key decision-making processes, represent student interests in strategic planning, and collaborate with college leadership to enhance institutional effectiveness. I engage in policy discussions, governance responsibilities, and initiatives that promote a supportive and inclusive academic environment.
+									</p>
+									<p>
+										<Badges list={boardOfDirectorsSkills} block="stack" fullContainer="fullContainer" />
+									</p>
+								</div>
+							</article>
+
+
 							<article className={career.company}>
 								<div className={career.companyContent}>
 									<span className={career.companyHeader}>
@@ -85,7 +104,7 @@ export default function Career() {
 									<p>
 										<Badges list={tommyHilfiger} block="stack" fullContainer="fullContainer" />
 									</p>
-									
+
 								</div>
 							</article>
 						</>
@@ -131,3 +150,22 @@ const studentAmbassadorSkills = [
 	{ key: 'fa-calendar-alt', name: 'Campus Tours & Events', type: 'fa' },
 	{ key: 'fa-comments', name: 'Communication & Outreach', type: 'fa' }
 ];
+
+const boardOfDirectorsSkills = [
+	{ key: 'leadership', name: 'Leadership', type: 'custom' },
+	{ key: 'strategic-planning', name: 'Strategic Planning', type: 'custom' },
+	{ key: 'governance', name: 'Governance', type: 'custom' },
+	{ key: 'policy-development', name: 'Policy Development', type: 'custom' },
+	{ key: 'stakeholder-engagement', name: 'Stakeholder Engagement', type: 'custom' },
+	{ key: 'decision-making', name: 'Decision-Making', type: 'custom' },
+	{ key: 'collaboration', name: 'Collaboration', type: 'custom' },
+	{ key: 'conflict-resolution', name: 'Conflict Resolution', type: 'custom' },
+	{ key: 'public-speaking', name: 'Public Speaking', type: 'custom' },
+	{ key: 'student-advocacy', name: 'Student Advocacy', type: 'custom' },
+	{ key: 'communication', name: 'Communication', type: 'custom' },
+	{ key: 'equity-inclusion', name: 'Equity & Inclusion', type: 'custom' },
+	{ key: 'teamwork', name: 'Teamwork', type: 'custom' },
+	{ key: 'org-development', name: 'Organizational Development', type: 'custom' },
+	{ key: 'project-oversight', name: 'Project Oversight', type: 'custom' }
+  ];
+  
