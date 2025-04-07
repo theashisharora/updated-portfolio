@@ -17,6 +17,27 @@ export default function Document() {
 				<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
 				<meta name="msapplication-TileColor" content="#da532c" />
 				<meta name="theme-color" content="#ffffff" />
+				{/* Chatwoot Script */}
+				<script
+					dangerouslySetInnerHTML={{
+						__html: `
+							(function(d,t) {
+								var BASE_URL="https://app.chatwoot.com";
+								var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+								g.src=BASE_URL+"/packs/js/sdk.js";
+								g.defer = true;
+								g.async = true;
+								s.parentNode.insertBefore(g,s);
+								g.onload=function(){
+									window.chatwootSDK.run({
+										websiteToken: 'UZRDGCGXMETgrQEGYB5MwHNq',
+										baseUrl: BASE_URL
+									})
+								}
+							})(document,"script");
+						`,
+					}}
+				/>
 			</Head>
 			<body>
 				<Main />
