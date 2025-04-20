@@ -49,9 +49,9 @@ export default function Career() {
 									<p>
 									As a Full Stack Developer, I design and develop scalable web applications using modern technologies such as React, Node.js, and MongoDB. I work across both frontend and backend environments, build responsive UI components, implement RESTful APIs, and manage databases. My role involves debugging, code optimization, version control, and deployment, ensuring seamless user experiences and efficient application performance.
 									</p>
-									<p>
+									<div>
 										<Badges list={fullStack} block="stack" fullContainer="fullContainer" />
-									</p>
+									</div>
 								</div>
 							</article>
 
@@ -66,9 +66,9 @@ export default function Career() {
 									<p>
 										As a Board of Director at Sheridan College, I contribute to key decision-making processes, represent student interests in strategic planning, and collaborate with college leadership to enhance institutional effectiveness. I engage in policy discussions, governance responsibilities, and initiatives that promote a supportive and inclusive academic environment.
 									</p>
-									<p>
+									<div>
 										<Badges list={boardOfDirectorsSkills} block="stack" fullContainer="fullContainer" />
-									</p>
+									</div>
 								</div>
 							</article>
 
@@ -84,9 +84,9 @@ export default function Career() {
 									<p>
 										As a Student Ambassador at Sheridan College, I assist with recruitment events, lead campus tours, and support new students in their transition to college life. I represent the college professionally, provide administrative assistance, and foster engagement among students.
 									</p>
-									<p>
+									<div>
 										<Badges list={studentAmbassadorSkills} block="stack" fullContainer="fullContainer" />
-									</p>
+									</div>
 								</div>
 							</article>
 
@@ -101,9 +101,9 @@ export default function Career() {
 									<p>
 										At Tommy Hilfiger, I lead sales initiatives, assist in team training, and ensure an exceptional customer experience. I focus on driving sales performance, optimizing store operations, and maintaining brand standards to enhance customer engagement.
 									</p>
-									<p>
+									<div>
 										<Badges list={tommyHilfiger} block="stack" fullContainer="fullContainer" />
-									</p>
+									</div>
 
 								</div>
 							</article>
@@ -131,41 +131,40 @@ const fullStack = [
 ]
 
 const tommyHilfiger = [
-	{ key: 'fa-cash-register', name: 'Sales & Customer Service', type: 'fa' },
-	{ key: 'fa-users', name: 'Team Leadership', type: 'fa' },
-	{ key: 'fa-boxes', name: 'Inventory Management', type: 'fa' },
-	{ key: 'fa-credit-card', name: 'Point of Sale (POS) Systems', type: 'fa' },
-	{ key: 'fa-tshirt', name: 'Visual Merchandising', type: 'fa' },
-	{ key: 'fa-comments', name: 'Effective Communication', type: 'fa' },
-	{ key: 'fa-lightbulb', name: 'Problem Solving', type: 'fa' },
-	{ key: 'fa-clock', name: 'Time Management', type: 'fa' },
-	{ key: 'fa-store', name: 'Brand Presentation', type: 'fa' },
-	{ key: 'fa-smile', name: 'Customer Engagement', type: 'fa' }
+	{ key: 'cash-register', name: 'Sales & Customer Service', type: 'fas' },
+	{ key: 'users', name: 'Team Leadership', type: 'fas' },
+	{ key: 'boxes', name: 'Inventory Management', type: 'fas' },
+	{ key: 'credit-card', name: 'Point of Sale (POS) Systems', type: 'fas' },
+	{ key: 'tshirt', name: 'Visual Merchandising', type: 'fas' },
+	{ key: 'comments', name: 'Effective Communication', type: 'fas' },
+	{ key: 'lightbulb', name: 'Problem Solving', type: 'fas' },
+	{ key: 'clock', name: 'Time Management', type: 'fas' },
+	{ key: 'store', name: 'Brand Presentation', type: 'fas' },
+	{ key: 'smile', name: 'Customer Engagement', type: 'fas' },
 ];
 
 const studentAmbassadorSkills = [
-	{ key: 'fa-users', name: 'Public Speaking', type: 'fa' },
-	{ key: 'fa-handshake', name: 'Student Engagement', type: 'fa' },
-	{ key: 'fa-chalkboard-teacher', name: 'Event Facilitation', type: 'fa' },
-	{ key: 'fa-calendar-alt', name: 'Campus Tours & Events', type: 'fa' },
-	{ key: 'fa-comments', name: 'Communication & Outreach', type: 'fa' }
+	{ key: 'users', name: 'Public Speaking', type: 'fas' },
+	{ key: 'handshake', name: 'Student Engagement', type: 'fas' },
+	{ key: 'chalkboard-teacher', name: 'Event Facilitation', type: 'fas' },
+	{ key: 'calendar-alt', name: 'Campus Tours & Events', type: 'fas' },
+	{ key: 'comments', name: 'Communication & Outreach', type: 'fas' },
 ];
 
 const boardOfDirectorsSkills = [
-	{ key: 'leadership', name: 'Leadership', type: 'custom' },
-	{ key: 'strategic-planning', name: 'Strategic Planning', type: 'custom' },
-	{ key: 'governance', name: 'Governance', type: 'custom' },
-	{ key: 'policy-development', name: 'Policy Development', type: 'custom' },
-	{ key: 'stakeholder-engagement', name: 'Stakeholder Engagement', type: 'custom' },
-	{ key: 'decision-making', name: 'Decision-Making', type: 'custom' },
-	{ key: 'collaboration', name: 'Collaboration', type: 'custom' },
-	{ key: 'conflict-resolution', name: 'Conflict Resolution', type: 'custom' },
-	{ key: 'public-speaking', name: 'Public Speaking', type: 'custom' },
-	{ key: 'student-advocacy', name: 'Student Advocacy', type: 'custom' },
-	{ key: 'communication', name: 'Communication', type: 'custom' },
-	{ key: 'equity-inclusion', name: 'Equity & Inclusion', type: 'custom' },
-	{ key: 'teamwork', name: 'Teamwork', type: 'custom' },
-	{ key: 'org-development', name: 'Organizational Development', type: 'custom' },
-	{ key: 'project-oversight', name: 'Project Oversight', type: 'custom' }
-  ];
-  
+	{ key: 'user-tie', name: 'Leadership', type: 'fas' },
+	{ key: 'project-diagram', name: 'Strategic Planning', type: 'fas' },
+	{ key: 'balance-scale', name: 'Governance', type: 'fas' },
+	{ key: 'file-alt', name: 'Policy Development', type: 'fas' },
+	{ key: 'users-cog', name: 'Stakeholder Engagement', type: 'fas' },
+	{ key: 'gavel', name: 'Decision-Making', type: 'fas' },
+	{ key: 'handshake', name: 'Collaboration', type: 'fas' },
+	{ key: 'comments', name: 'Conflict Resolution', type: 'fas' },
+	{ key: 'bullhorn', name: 'Public Speaking', type: 'fas' },
+	{ key: 'user-shield', name: 'Student Advocacy', type: 'fas' },
+	{ key: 'comment-dots', name: 'Communication', type: 'fas' },
+	{ key: 'universal-access', name: 'Equity & Inclusion', type: 'fas' },
+	{ key: 'people-carry', name: 'Teamwork', type: 'fas' },
+	{ key: 'building', name: 'Organizational Development', type: 'fas' },
+	{ key: 'tasks', name: 'Project Oversight', type: 'fas' },
+];  

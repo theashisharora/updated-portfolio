@@ -1,4 +1,5 @@
-@import '../../scss/mixins';
+@use "/styles/scss/mixins" as *;
+
 
 .hasBg {
 	border-bottom: 1px solid var(--primary-dark);
