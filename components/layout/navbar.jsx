@@ -147,10 +147,16 @@ export default function Navbar() {
 				<li data-open={menuState} className={css.menuContent}>
 					<ul>
 						{
-						content.map( ({ url, title }, index) => {
+						content.map( ({ url, title, download }, index) => {
 							return (
 								<li key={index}>
-									<Link href={url}>{title}</Link>
+									{download ? (
+										<a href={url} download>
+											{title}
+										</a>
+									) : (
+										<Link href={url}>{title}</Link>
+									)}
 								</li>
 							)
 						})	

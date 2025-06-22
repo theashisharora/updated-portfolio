@@ -1,18 +1,19 @@
 [
-	{
-		"url": "/",
-		"title": "About Me"
-	},
-	{
-		"url": "/technical",
-		"title": "Technical"
-	},
-	{
-		"url": "/experience",
-		"title": "Experience"
-	},
-	{
-		"url": "https://www.linkedin.com/in/theashisharora2314/",
-		"title": "LinkedIn"
-	}
+    {
+        "url": "/Ashish_Arora_Resume.pdf",
+        "title": "Resume",
+        "download": true
+    },
+    {
+        "url": "/technical",
+        "title": "Technical"
+    },
+    {
+        "url": "/experience",
+        "title": "Experience"
+    },
+    {
+        "url": "https://www.linkedin.com/in/theashisharora2314/",
+        "title": "LinkedIn"
+    }
 ]
