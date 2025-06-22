@@ -1,0 +1,137 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal {
+    background: white;
+    border-radius: 16px;
+    padding: 0;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #888;
+    z-index: 1000;
+  }
+  
+  .closeButton:hover {
+    color: #f00;
+  }
+  
+  .imageContainer {
+    position: relative;
+    width: 100%;
+  }
+  
+  .banner {
+    width: 100%;
+    display: block;
+  }
+  
+  .overlayForm {
+    position: absolute;
+    bottom: 10%;
+    left: 76%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 38%;
+    
+  }
+  
+  .input {
+    width: 100%;
+    padding: 6px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    color: rgb(0, 23, 128) 
+  }
+  
+  .submit {
+    background: #ffc107;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 999px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .submit:hover {
+    background: #e0a800;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  .modal {
+    animation: fadeIn 0.4s ease-out;
+  }
+
+.fadeOut {
+  animation: fadeOut 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.closeButton {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.loader {
+  width: 18px;
+  height: 18px;
+  border: 3px solid #fff;
+  border-top: 3px solid #333;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.thankYouMessage {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+}

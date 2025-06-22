@@ -8,7 +8,7 @@ import FeaturedProjects	from '../components/sections/projects/featured'
 import Color 		from '../components/utils/page.colors.util'
 
 import colors 		from '../content/index/_colors.json'
-
+import PopupModal from '../components/popup/PopupModal'
 //
 export default function HomePage() {
 
@@ -18,6 +18,7 @@ export default function HomePage() {
 			<Hero />
 			{/* <Looking /> */}
 			{/* <FeaturedProjects /> */}
+			<PopupModal />
 			<About />
 			<Technical />
 			<Career />
