@@ -59,7 +59,7 @@ export default function Career() {
 								<div className={career.companyContent}>
 									<span className={career.companyHeader}>
 										<h3>Sheridan College</h3>
-										<h4>Board of Director (Part-time Contract)</h4>
+										<h4>Secretary & Member Board of Director (Part-time Contract)</h4>
 										<h4>May 2025 - Present</h4>
 										<h5>Davis Campus, Ontario, Canada</h5>
 									</span>
@@ -77,8 +77,25 @@ export default function Career() {
 								<div className={career.companyContent}>
 									<span className={career.companyHeader}>
 										<h3>Sheridan College</h3>
-										<h4>Student Ambassador (Part-time Contract)</h4>
+										<h4>Student Clerical (Part-time Contract)</h4>
 										<h4>Aug 2024 - Present</h4>
+										<h5>Trafalgar Campus, Oakville, Ontario, Canada</h5>
+									</span>
+									<p>
+										Provide front-line support to students and staff for OneCard services, including issuing and replacing ID cards. Maintain accurate student records and ensure data confidentiality in compliance with college policies. Assist with administrative tasks such as data entry, email correspondence, and inventory tracking. Deliver excellent customer service in a fast-paced, student-focused environment.
+									</p>
+									<div>
+										<Badges list={studentAmbassadorSkills} block="stack" fullContainer="fullContainer" />
+									</div>
+								</div>
+							</article>
+
+							<article className={career.company}>
+								<div className={career.companyContent}>
+									<span className={career.companyHeader}>
+										<h3>Sheridan College</h3>
+										<h4>Student Ambassador (Part-time Contract)</h4>
+										<h4>Aug 2024 - May 2025</h4>
 										<h5>Davis Campus, Brampton, Ontario, Canada</h5>
 									</span>
 									<p>
@@ -167,4 +184,4 @@ const boardOfDirectorsSkills = [
 	{ key: 'people-carry', name: 'Teamwork', type: 'fas' },
 	{ key: 'building', name: 'Organizational Development', type: 'fas' },
 	{ key: 'tasks', name: 'Project Oversight', type: 'fas' },
-];  
+];
