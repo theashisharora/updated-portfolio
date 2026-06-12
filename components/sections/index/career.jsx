@@ -41,6 +41,23 @@ export default function Career() {
 							<article className={career.company}>
 								<div className={career.companyContent}>
 									<span className={career.companyHeader}>
+										<h3>Naryant</h3>
+										<h4>Software Developer Co-op</h4>
+										<h4>Winter 2026 - August 2026</h4>
+										<h5>Oakville, Ontario</h5>
+									</span>
+									<p>
+										Contributing to software development tasks in a professional co-op environment, including application development, debugging, testing, and technical documentation. Collaborating with team members to understand requirements, deliver maintainable solutions, and gain practical experience with real-world software systems and development workflows.
+									</p>
+									<div>
+										<Badges list={softwareDeveloperCoop} block="stack" fullContainer="fullContainer" />
+									</div>
+								</div>
+							</article>
+
+							<article className={career.company}>
+								<div className={career.companyContent}>
+									<span className={career.companyHeader}>
 										<h3>Sheridan College (Powered by Samskrita Bharati)</h3>
 										<h4>Full-Stack Developer (Full-time)</h4>
 										<h4>Jan 2025 - Apr 2025 · 4 mos</h4>
@@ -146,6 +163,14 @@ const fullStack = [
 	{ key: 'mysql', name: 'MySQL', type: 'devicon' },
 	{ key: 'mongodb', name: 'MongoDB', type: 'devicon' },
 ]
+
+const softwareDeveloperCoop = [
+	{ key: 'code', name: 'Software Development', type: 'fas' },
+	{ key: 'bug', name: 'Debugging', type: 'fas' },
+	{ key: 'check-circle', name: 'Testing', type: 'fas' },
+	{ key: 'file-alt', name: 'Technical Documentation', type: 'fas' },
+	{ key: 'users', name: 'Team Collaboration', type: 'fas' },
+];
 
 const tommyHilfiger = [
 	{ key: 'cash-register', name: 'Sales & Customer Service', type: 'fas' },

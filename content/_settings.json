@@ -8,8 +8,8 @@
 	},
 
 	"portfolio": { 
-		"forkthis": "Steal this theme! Its open-source 🥰",
-		"repo_html": "https://www.github.com/atlamors/portfolio",
-		"repo_api": "https://api.github.com/repos/atlamors/portfolio"
+		"forkthis": "View this portfolio on GitHub",
+		"repo_html": "https://www.github.com/theashisharora/updated-portfolio",
+		"repo_api": "https://api.github.com/repos/theashisharora/updated-portfolio"
 	}
 }

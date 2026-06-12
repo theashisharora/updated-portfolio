@@ -1,137 +1,226 @@
+.floatingButton {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 20;
+  border: 1px solid color-mix(in srgb, var(--secondary) 60%, transparent);
+  border-radius: 999px;
+  padding: 0.8rem 1.1rem;
+  color: var(--background);
+  background: var(--secondary);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.28);
+  cursor: pointer;
+  font-family: var(--font-accent);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.floatingButton:hover,
+.floatingButton:focus-visible {
+  color: var(--background);
+  background: var(--primary-bright);
+  outline: 2px solid var(--secondary);
+  outline-offset: 3px;
+}
+
 .overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-  }
-  
-  .modal {
-    background: white;
-    border-radius: 16px;
-    padding: 0;
-    max-width: 500px;
-    width: 90%;
-    position: relative;
-    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-  }
-  
-  .closeButton {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    background: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    color: #888;
-    z-index: 1000;
-  }
-  
-  .closeButton:hover {
-    color: #f00;
-  }
-  
-  .imageContainer {
-    position: relative;
-    width: 100%;
-  }
-  
-  .banner {
-    width: 100%;
-    display: block;
-  }
-  
-  .overlayForm {
-    position: absolute;
-    bottom: 10%;
-    left: 76%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    width: 38%;
-    
-  }
-  
-  .input {
-    width: 100%;
-    padding: 6px;
-    border: none;
-    border-radius: 20px;
-    font-size: 14px;
-    color: rgb(0, 23, 128) 
-  }
-  
-  .submit {
-    background: #ffc107;
-    color: white;
-    padding: 5px 20px;
-    border: none;
-    border-radius: 999px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .submit:hover {
-    background: #e0a800;
-  }
-  
-  @keyframes fadeIn {
-    from { opacity: 0; transform: scale(0.95); }
-    to { opacity: 1; transform: scale(1); }
-  }
-  
-  .modal {
-    animation: fadeIn 0.4s ease-out;
-  }
-
-.fadeOut {
-  animation: fadeOut 0.5s ease-out forwards;
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(10px);
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes fadeOut {
-  from { opacity: 1; }
-  to { opacity: 0; }
+.modal {
+  position: relative;
+  width: min(100%, 460px);
+  max-height: min(90vh, 760px);
+  overflow-y: auto;
+  border: 1px solid var(--primary-dark);
+  border-radius: 1rem;
+  padding: 2rem;
+  color: var(--primary);
+  background: var(--background-dim2);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5);
+  animation: modalIn 180ms ease-out;
 }
 
 .closeButton {
   position: absolute;
-  top: 8px;
-  right: 12px;
-  font-size: 1.2rem;
-  background: none;
-  border: none;
+  top: 0.9rem;
+  right: 0.9rem;
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 1px solid var(--primary-dark);
+  border-radius: 999px;
+  color: var(--primary);
+  background: var(--background-dim);
   cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
 }
 
-.loader {
-  width: 18px;
-  height: 18px;
-  border: 3px solid #fff;
-  border-top: 3px solid #333;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-  display: inline-block;
+.closeButton:hover,
+.closeButton:focus-visible {
+  color: var(--primary-bright);
+  border-color: var(--secondary);
+  outline: none;
 }
 
-@keyframes spin {
+.closeButton:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding-right: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.header h2 {
+  font-size: 2rem;
+  line-height: 1.05;
+}
+
+.header p {
+  margin: 0;
+}
+
+.kicker {
+  color: var(--secondary);
+  font-family: var(--font-accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  color: var(--primary);
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  border: 1px solid var(--primary-dark);
+  border-radius: 0.65rem;
+  padding: 0.8rem 0.9rem;
+  color: var(--primary-bright);
+  background: var(--background);
+  font: inherit;
+  font-weight: 400;
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 7rem;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: var(--secondary);
+  outline: 2px solid color-mix(in srgb, var(--secondary) 35%, transparent);
+  outline-offset: 1px;
+}
+
+.privacy {
+  margin: -0.15rem 0 0;
+  color: var(--primary-dim);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.status {
+  margin: 0;
+  border-radius: 0.65rem;
+  padding: 0.8rem 0.9rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.success {
+  color: var(--primary-bright);
+  background: color-mix(in srgb, var(--secondary) 16%, var(--background));
+  border: 1px solid color-mix(in srgb, var(--secondary) 45%, transparent);
+}
+
+.error {
+  color: #ffdede;
+  background: rgba(150, 20, 20, 0.24);
+  border: 1px solid rgba(255, 120, 120, 0.35);
+}
+
+.submit {
+  width: 100%;
+  border: none;
+  border-radius: 999px;
+  padding: 0.9rem 1.25rem;
+  color: var(--background);
+  background: var(--secondary);
+  cursor: pointer;
+  font-family: var(--font-accent);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.submit:hover,
+.submit:focus-visible {
+  background: var(--primary-bright);
+  outline: 2px solid var(--secondary);
+  outline-offset: 3px;
+}
+
+.submit:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+@keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: translateY(0.5rem) scale(0.98);
+  }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0) scale(1);
   }
 }
 
-.thankYouMessage {
-  text-align: center;
-  padding: 2rem;
-  font-size: 1.2rem;
+@media (max-width: 767px) {
+  .floatingButton {
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .modal {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.85rem;
+  }
+
+  .header h2 {
+    font-size: 1.7rem;
+  }
 }
