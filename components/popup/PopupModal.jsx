@@ -155,7 +155,6 @@ export default function PopupModal() {
                   value={form.message}
                   onChange={handleChange}
                   rows={4}
-                  required
                 />
               </label>
 
