@@ -10,12 +10,27 @@ const initialForm = {
   message: "",
 };
 
+const POPUP_SESSION_KEY = "portfolioContactPopupShown";
+const POPUP_DELAY = 3000;
+
 export default function PopupModal() {
   const [show, setShow] = useState(false);
   const [form, setForm] = useState(initialForm);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [status, setStatus] = useState({ type: "", message: "" });
   const closeButtonRef = useRef(null);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    if (sessionStorage.getItem(POPUP_SESSION_KEY) === "true") return;
+
+    const timer = window.setTimeout(() => {
+      sessionStorage.setItem(POPUP_SESSION_KEY, "true");
+      setShow(true);
+    }, POPUP_DELAY);
+
+    return () => window.clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     if (!show) return;
@@ -38,11 +53,6 @@ export default function PopupModal() {
       ...current,
       [name]: value,
     }));
-  };
-
-  const handleOpen = () => {
-    setStatus({ type: "", message: "" });
-    setShow(true);
   };
 
   const handleClose = () => {
@@ -84,16 +94,6 @@ export default function PopupModal() {
 
   return (
     <>
-      <button
-        type="button"
-        className={styles.floatingButton}
-        onClick={handleOpen}
-        aria-haspopup="dialog"
-        aria-expanded={show}
-      >
-        Contact
-      </button>
-
       {show && (
         <div className={styles.overlay}>
           <section
@@ -177,7 +177,14 @@ export default function PopupModal() {
                 className={styles.submit}
                 disabled={isSubmitting}
               >
-                {isSubmitting ? "Sending..." : "Send Message"}
+                {isSubmitting ? (
+                  <>
+                    <span className={styles.spinner} aria-hidden="true" />
+                    Sending...
+                  </>
+                ) : (
+                  "Send Message"
+                )}
               </button>
             </form>
           </section>
