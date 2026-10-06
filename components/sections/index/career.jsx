@@ -42,8 +42,8 @@ export default function Career() {
 								<div className={career.companyContent}>
 									<span className={career.companyHeader}>
 										<h3>Naryant</h3>
-										<h4>Software Developer Co-op</h4>
-										<h4>Winter 2026 - August 2026</h4>
+										<h4>Software Developer</h4>
+										<h4>January 2026 - Present</h4>
 										<h5>Oakville, Ontario</h5>
 									</span>
 									<p>
@@ -58,8 +58,8 @@ export default function Career() {
 							<article className={career.company}>
 								<div className={career.companyContent}>
 									<span className={career.companyHeader}>
-										<h3>Sheridan College (Powered by Samskrita Bharati)</h3>
-										<h4>Full-Stack Developer (Full-time)</h4>
+										<h3>Sheridan College</h3>
+										<h4>Full-Stack Developer</h4>
 										<h4>Jan 2025 - Apr 2025 · 4 mos</h4>
 										<h5>Oakville, Ontario, Canada</h5>
 									</span>
@@ -71,24 +71,6 @@ export default function Career() {
 									</div>
 								</div>
 							</article>
-
-							<article className={career.company}>
-								<div className={career.companyContent}>
-									<span className={career.companyHeader}>
-										<h3>Sheridan College</h3>
-										<h4>Secretary & Member Board of Director (Part-time Contract)</h4>
-										<h4>May 2025 - Present</h4>
-										<h5>Davis Campus, Ontario, Canada</h5>
-									</span>
-									<p>
-										As a Board of Director at Sheridan College, I contribute to key decision-making processes, represent student interests in strategic planning, and collaborate with college leadership to enhance institutional effectiveness. I engage in policy discussions, governance responsibilities, and initiatives that promote a supportive and inclusive academic environment.
-									</p>
-									<div>
-										<Badges list={boardOfDirectorsSkills} block="stack" fullContainer="fullContainer" />
-									</div>
-								</div>
-							</article>
-
 
 							<article className={career.company}>
 								<div className={career.companyContent}>
@@ -110,9 +92,26 @@ export default function Career() {
 							<article className={career.company}>
 								<div className={career.companyContent}>
 									<span className={career.companyHeader}>
+										<h3>Sheridan Student Union</h3>
+										<h4>Customer Service Representative</h4>
+										<h4>September 2026 - Present</h4>
+										<h5>Brampton, Ontario</h5>
+									</span>
+									<p>
+										Provide front-line support to Sheridan students and visitors by responding to questions, emails, and service requests related to Student Union programs, events, and resources. Apply strong communication, problem-solving, and digital skills to resolve inquiries, guide students to the appropriate services, and support a welcoming campus experience while building valuable IT and customer service experience.
+									</p>
+									<div>
+										<Badges list={softwareDeveloperCoop} block="stack" fullContainer="fullContainer" />
+									</div>
+								</div>
+							</article>
+
+							<article className={career.company}>
+								<div className={career.companyContent}>
+									<span className={career.companyHeader}>
 										<h3>Sheridan College</h3>
-										<h4>Student Ambassador (Part-time Contract)</h4>
-										<h4>Aug 2024 - May 2025</h4>
+										<h4>Student Ambassador</h4>
+										<h4>Aug 2024 - Present (Part-time Contract)</h4>
 										<h5>Davis Campus, Brampton, Ontario, Canada</h5>
 									</span>
 									<p>
@@ -127,9 +126,26 @@ export default function Career() {
 							<article className={career.company}>
 								<div className={career.companyContent}>
 									<span className={career.companyHeader}>
+										<h3>Sheridan College</h3>
+										<h4>Secretary & Member Board of Director</h4>
+										<h4>May 2025 - May 2026 (Part-time Contract)</h4>
+										<h5>Davis Campus, Ontario, Canada</h5>
+									</span>
+									<p>
+										As a Board of Director at Sheridan College, I contribute to key decision-making processes, represent student interests in strategic planning, and collaborate with college leadership to enhance institutional effectiveness. I engage in policy discussions, governance responsibilities, and initiatives that promote a supportive and inclusive academic environment.
+									</p>
+									<div>
+										<Badges list={boardOfDirectorsSkills} block="stack" fullContainer="fullContainer" />
+									</div>
+								</div>
+							</article>
+
+							<article className={career.company}>
+								<div className={career.companyContent}>
+									<span className={career.companyHeader}>
 										<h3>Tommy Hilfiger</h3>
 										<h4>Lead Sales Associate (Part-time)</h4>
-										<h4>Oct 2023 - Present · 1 yr 6 mos</h4>
+										<h4>Oct 2023 - Oct 2026 · 2 yr 0 mos</h4>
 										<h5>Halton Hills, Ontario, Canada</h5>
 									</span>
 									<p>
@@ -142,7 +158,6 @@ export default function Career() {
 								</div>
 							</article>
 						</>
-
 					)}
 				</section>
 			</Container>
