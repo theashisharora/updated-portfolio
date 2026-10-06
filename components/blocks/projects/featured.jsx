@@ -8,9 +8,8 @@ import Badges 		from '../../utils/badge.list.util'
 import Icon 		from '../../utils/icon.util'
 
 import css 			from '../../../styles/sections/projects/featured.module.scss'
-import content 		from '../../../content/projects/featured.json'
 
-export default function FeaturedProject({ content }, index) {
+export default function FeaturedProject({ content, index }) {
 
 	const { project, url, repo, descriptionTitle,description, stack, imageOptions, images } = content
 
@@ -47,9 +46,21 @@ export default function FeaturedProject({ content }, index) {
 					<div className={css.stackContainer}>
 						<Badges list={stack} block="stack" fullContainer={false} color={false} />
 					</div>
-					<m.div variants={''} className={css.viewProject}>
-						<Icon icon={[ 'fad', 'arrow-right-to-bracket' ]} />
-					</m.div>
+					{url ? (
+						<m.a
+							className={css.viewProject}
+							href={url}
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label={`Open ${project} (opens in a new tab)`}
+						>
+							<Icon icon={[ 'fad', 'arrow-right-to-bracket' ]} />
+						</m.a>
+					) : (
+						<div className={css.viewProject} aria-hidden="true">
+							<Icon icon={[ 'fad', 'arrow-right-to-bracket' ]} />
+						</div>
+					)}
 				</div>
 			</div>
 
@@ -60,7 +71,9 @@ export default function FeaturedProject({ content }, index) {
 						return (
 							<m.div key={`${index}-${key}`} variants={item}>
 								<m.div variants={hover}>
-									<Image src={url} alt="x" height={h} width={w} />
+									<span>
+										<Image src={url} alt={`${project} project preview`} height={Number(h)} width={Number(w)} />
+									</span>
 								</m.div>
 							</m.div>
 						)}

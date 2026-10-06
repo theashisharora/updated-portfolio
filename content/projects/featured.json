@@ -1,53 +1,218 @@
 [
 	{
-		"project": "My Supply Co.",
-		"url": "https://mysupplyco.com",
+		"project": "Functional Analyzer",
+		"url": "",
 		"repo": "Private",
-		"descriptionTitle": "D2C & B2B ecommerce site and blog",
-		"description": "with elegant solutions for a complex codebase and customer journey.",
-		"imageOptions": [
-		],
+		"descriptionTitle": "AI-Assisted Interview & Analysis Platform",
+		"description": "A full-stack platform that allows administrators to create, manage, and assign structured functional interviews. It supports secure interview access, guided questions, saved progress, response review, submission, status tracking, AI-assisted analysis, and reporting.",
+		"imageOptions": [],
 		"images": [
-			{ "key": "mock-stack",	"hover": "right", 	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/03.png" },
-			{ "key": "mock-stack",	"hover": "right",	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/02.png" },
-			{ "key": "mock-stack",	"hover": "left",	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/01.png" }
+			{
+				"key": "project-preview",
+				"hover": "left",
+				"h": "797",
+				"w": "556",
+				"url": "/img/project-placeholder.svg"
+			}
 		],
 		"stack": [
-			{ "key": "php", 		"name": "PHP", 			"type": "devicon" },
-			{ "key": "mysql", 		"name": "mySQL", 		"type": "devicon" },
-			{ "key": "javascript", 	"name": "JavaScript", 	"type": "devicon" },
-			{ "key": "jquery", 		"name": "jQuery", 		"type": "devicon" },
-			{ "key": "woocommerce", "name": "WooCommerce", 	"type": "devicon" },
-			{ "key": "wordpress",	"name": "Wordpress", 	"type": "devicon" },
-			{ "key": "html5",		"name": "HTML5", 		"type": "devicon" },
-			{ "key": "css3",		"name": "CSS3", 		"type": "devicon" },
-			{ "key": "sass",		"name": "SCSS", 		"type": "devicon" },
-			{ "key": "git",			"name": "Git(Hub)", 	"type": "devicon" },
-			{ "key": "google",		"name": "GA4/GTM/EEC", 	"type": "devicon" }
+			{
+				"key": "react",
+				"name": "React",
+				"type": "devicon"
+			},
+			{
+				"key": "javascript",
+				"name": "JavaScript",
+				"type": "devicon"
+			},
+			{
+				"key": "server",
+				"name": "REST API",
+				"type": "fad"
+			},
+			{
+				"key": "docker",
+				"name": "Docker",
+				"type": "devicon"
+			},
+			{
+				"key": "database",
+				"name": "Database",
+				"type": "fad"
+			},
+			{
+				"key": "brain",
+				"name": "AI Integration",
+				"type": "fad"
+			},
+			{
+				"key": "git",
+				"name": "Git",
+				"type": "devicon"
+			}
 		]
 	},
 	{
-		"project": "Portfolio Website",
-		"url": "https://github.com/theashisharora/updated-portfolio",
-		"repo": "Public",
-		"descriptionTitle": "Personal portfolio",
-		"description": "built with Next.js and React to present experience, projects, and technical background.",
-		"imageOptions": [
-			{ "key": "size", 		"value": "large" }
-		],
+		"project": "Sales Storyline",
+		"url": "",
+		"repo": "Private",
+		"descriptionTitle": "AI Sales Intelligence Platform",
+		"description": "A full-stack AI-powered application that combines HubSpot deal information and Google Drive content to generate structured sales insights and client-ready storylines. It supports automated content generation, editing, saving, and exporting.",
+		"imageOptions": [],
 		"images": [
-			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556",  "url": "/img/portfolio-mock_single.png" }
+			{
+				"key": "project-preview",
+				"hover": "right",
+				"h": "797",
+				"w": "556",
+				"url": "/img/project-placeholder.svg"
+			}
 		],
 		"stack": [
-			{ "key": "nextjs", 		"name": "Next.js", 		"type": "devicon" },
-			{ "key": "react", 		"name": "React", 		"type": "devicon" },
-			{ "key": "nodejs", 		"name": "Node.js", 		"type": "devicon" },
-			{ "key": "mongodb", 	"name": "MongoDB", 		"type": "devicon" },
-			{ "key": "javascript", 	"name": "JavaScript", 	"type": "devicon" },
-			{ "key": "html5",		"name": "HTML5", 		"type": "devicon" },
-			{ "key": "css3",		"name": "CSS3", 		"type": "devicon" },
-			{ "key": "sass",		"name": "SCSS", 		"type": "devicon" },
-			{ "key": "git",			"name": "Git(Hub)", 	"type": "devicon" }
+			{
+				"key": "react",
+				"name": "React",
+				"type": "devicon"
+			},
+			{
+				"key": "typescript",
+				"name": "TypeScript",
+				"type": "devicon"
+			},
+			{
+				"key": "csharp",
+				"name": "C#",
+				"type": "devicon"
+			},
+			{
+				"key": "dotnetcore",
+				"name": "ASP.NET Core",
+				"type": "devicon"
+			},
+			{
+				"key": "microsoftsqlserver",
+				"name": "SQL Server",
+				"type": "devicon"
+			},
+			{
+				"key": "brain",
+				"name": "OpenAI API",
+				"type": "fad"
+			},
+			{
+				"key": "server",
+				"name": "HubSpot API",
+				"type": "fad"
+			},
+			{
+				"key": "folder",
+				"name": "Google Drive",
+				"type": "fad"
+			},
+			{
+				"key": "network-wired",
+				"name": "MCP",
+				"type": "fad"
+			}
+		]
+	},
+	{
+		"project": "Vote4Ash",
+		"url": "https://vote4ash.vercel.app/",
+		"repo": "Public",
+		"descriptionTitle": "Online Voting Platform",
+		"description": "A responsive online voting platform built for student organizations and community elections. It includes authentication, role-based access control, Firestore data storage, real-time election results, and responsive design.",
+		"imageOptions": [],
+		"images": [
+			{
+				"key": "project-preview",
+				"hover": "left",
+				"h": "797",
+				"w": "556",
+				"url": "/img/project-placeholder.svg"
+			}
+		],
+		"stack": [
+			{
+				"key": "nextjs",
+				"name": "Next.js",
+				"type": "devicon"
+			},
+			{
+				"key": "react",
+				"name": "React",
+				"type": "devicon"
+			},
+			{
+				"key": "code",
+				"name": "Tailwind CSS",
+				"type": "fad"
+			},
+			{
+				"key": "firebase",
+				"name": "Firebase",
+				"type": "devicon"
+			},
+			{
+				"key": "database",
+				"name": "Firestore",
+				"type": "fad"
+			},
+			{
+				"key": "cloud",
+				"name": "Vercel",
+				"type": "fad"
+			}
+		]
+	},
+	{
+		"project": "Go2Gether",
+		"url": "https://theashisharora.github.io/go2gether/",
+		"repo": "Public",
+		"descriptionTitle": "Carpooling & Transit Web Application",
+		"description": "A responsive web application developed for BramHacks that connects users travelling toward similar destinations to support ride sharing and public-transit coordination. It includes location/API functionality, ride matching, and dynamic user interactions.",
+		"imageOptions": [],
+		"images": [
+			{
+				"key": "project-preview",
+				"hover": "right",
+				"h": "797",
+				"w": "556",
+				"url": "/img/project-placeholder.svg"
+			}
+		],
+		"stack": [
+			{
+				"key": "html5",
+				"name": "HTML",
+				"type": "devicon"
+			},
+			{
+				"key": "css3",
+				"name": "CSS",
+				"type": "devicon"
+			},
+			{
+				"key": "sass",
+				"name": "SCSS",
+				"type": "devicon"
+			},
+			{
+				"key": "javascript",
+				"name": "JavaScript",
+				"type": "devicon"
+			},
+			{
+				"key": "bootstrap",
+				"name": "Bootstrap",
+				"type": "devicon"
+			},
+			{
+				"key": "server",
+				"name": "APIs",
+				"type": "fad"
+			}
 		]
 	}
 ]
